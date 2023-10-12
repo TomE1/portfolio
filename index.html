@@ -4,10 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/371ac98270.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <title>Document</title>
+    <title>Portfolio</title>
   </head>
   <body>
+    <!------------------- Contact -------------------------->
+    <section #contact>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>tommevans210@gmail.com</p>
+            <p>+66 086 901 4374</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <!------------------- header -------------------------->
 
     <section id="header">
@@ -16,7 +54,7 @@
           <img src="images/logo.png" class="logo" />
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Abt</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
@@ -29,6 +67,7 @@
       </div>
     </section>
     <!------------------- about -------------------------->
+
     <section id="about">
       <div class="container">
         <div class="row">
@@ -89,9 +128,101 @@
         </div>
       </div>
     </section>
+
+    <!------------------- services -------------------------->
+
+    <section id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio corrupti obcaecati mollitia, rem ut minima! Voluptate
+              debitis perspiciatis repellat at.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio corrupti obcaecati mollitia, rem ut minima! Voluptate
+              debitis perspiciatis repellat at.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio corrupti obcaecati mollitia, rem ut minima! Voluptate
+              debitis perspiciatis repellat at.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------- Portfolio -------------------------->
+    <section id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                antium, optio enim tempore ipsam dolorem vitae dignissimos
+                veritatis et.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                antium, optio enim tempore ipsam dolorem vitae dignissimos
+                veritatis et.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                antium, optio enim tempore ipsam dolorem vitae dignissimos
+                veritatis et.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </section>
+
     <script>
       var tabLinks = document.getElementsByClassName('tab-links')
       var tabContents = document.getElementsByClassName('tab-contents')
+
+      <!------------------- JavaScript -------------------------->
 
       function opentab(tabname) {
         for (tabLink of tabLinks) {
