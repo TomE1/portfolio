@@ -12,17 +12,17 @@
     <title>Portfolio</title>
   </head>
   <body>
+
+
     <!------------------- header -------------------------->
 
     <section id="header">
       <div class="container">
-        <nav>
+        <nav class='main-header'>
           <img src="images/tome.png" class="logo" />
-          <ul id="sidemenu">
+          <ul  id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fas fa-times" onclick="closemenu()"></i>
           </ul>
@@ -35,35 +35,34 @@
       </div>
     </section>
 
-    <!------------------- about -------------------------->
+
+        <!------------------- about -------------------------->
+
 
     <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/user.png" alt="" />
-          </div>
-
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-             I'm a an American ESL teacher currently living in Vietnam and I'm actively in search of a full-time teaching position.
+    
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>     
+          <p>
+            I'm an American ESL teacher currently living in Vietnam and seeking
+            a teaching position in Ho Chi Minh. Visa sponsorship is required.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('experience')">
+              Experience
             </p>
-            <div class="tab-titles">
-              <p class="tab-links" onclick="opentab('experience')">
-                Work Experience
-              </p>
-
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-              <p class="tab-links active-link" onclick="opentab('experience')">
-                Experience
-              </p>
-            </div>
-
-            <div class="tab-contents active-tab" id="experience">
-              <ul>
-                <li>
-                  <span>Work Experience</span><br /><br />
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            
+          </div>
+          <div class="tab-contents active-tab" id="experience">
+            <ul>
+              <li><span></span> <li>
+                  <span></span>
                   2020 - 2023: English Teacher at Language Link Vietnam: Long
                   Bien, Hai Duong, Hung Yen.
                   <br /><br />
@@ -74,142 +73,54 @@
                   Faculty, Salaya, Thailand.
                   <br /><br />
                   2007 - 2009: English Teacher at Potisarn Pittayakorn School
-                  English Program, Bangkok, Thailand. 2005 - 2007: English
+                  English Program, Bangkok, Thailand. 
+                  <br><br>
+                  2005 - 2007: English
                   Teacher at Benjamarachutit School English Program, Nakhorn Sri
-                  Thammarat, Thailand. 2002
-                  <br /><br />
+                  Thammarat, Thailand. 
+                  <br /><br /> 
+                  2002
+                 
                   2005: English Teacher at Sarassas Witaed Bangbon Bilingual
                   School, Bangkok, Thailand.
                 </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>Education</span><br /><br/>
+              </ul></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span></span>  <li>
+                  <span></span>
                   2001 TEXT AND TALK LANGUAGE ACADEMY TEFL certificate.
                   <br /><br />
 
                   1994 UNIVERSITY OF HAWAII Bachelor of Arts - Japanese Language
-                  and Literature. Interfaces
-                </li>
-      
-              </ul>
-            </div>
-            <div class="tab-contents" id="skills">
-              <ul>
-                <li>
-                  <span>333333333333333333</span><br />Designing Web/App
-                  Interfaces
-                </li>
-                <li><span>Web Development</span><br />Web App Development</li>
-                <li>
-                  <span>App Development</span><br />Building Android/IOS apps
-                </li>
-              </ul>
-            </div>
+                  and Literature. 
+                </li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="skills">
+            <ul>
+              <li><span>Skills</span><br />Designing Web/App Interfaces</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!------------------- services -------------------------->
-
-    <section id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Design</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio corrupti obcaecati mollitia, rem ut minima! Voluptate
-              debitis perspiciatis repellat at.
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div>
-            <i class="fa-brands fa-app-store"></i>
-            <h2>App Design</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio corrupti obcaecati mollitia, rem ut minima! Voluptate
-              debitis perspiciatis repellat at.
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-crop-simple"></i>
-            <h2>UI/UX Design</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio corrupti obcaecati mollitia, rem ut minima! Voluptate
-              debitis perspiciatis repellat at.
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!------------------- Portfolio -------------------------->
-    <section id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="images/work-1.png" alt="" />
-            <div class="layer">
-              <h3>Social Media App</h3>
-              <p>
-                antium, optio enim tempore ipsam dolorem vitae dignissimos
-                veritatis et.
-              </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/work-2.png" alt="" />
-            <div class="layer">
-              <h3>Music App</h3>
-              <p>
-                antium, optio enim tempore ipsam dolorem vitae dignissimos
-                veritatis et.
-              </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/work-3.png" alt="" />
-            <div class="layer">
-              <h3>Online Shopping App</h3>
-              <p>
-                antium, optio enim tempore ipsam dolorem vitae dignissimos
-                veritatis et.
-              </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="btn">See More</a>
-      </div>
-    </section>
 
     <!------------------- Contact -------------------------->
+
     <section id="contact">
+      <div class="container">
+
       <div class="container">
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fas fa-paper-plane"></i>tommevans210@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>+66 086 901 4374</p>
+            <p><i></i>tommevans210@gmail.com</p>
+            <p><i></i>+66 086 901 4374</p>
             <div class="social-icons">
               <a href="#"><i class="fa-brands fa-facebook"></i></a>
               <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -239,38 +150,10 @@
           <p>Created by Tom Evans</p>
         </div>
       </div>
+      </div>
+          
     </section>
+<script src='script.js'></script>
 
-    <!-- script for about -->
-
-    <script>
-      var tabLinks = document.getElementsByClassName('tab-links')
-      var tabContents = document.getElementsByClassName('tab-contents')
-
-      <!------------------- JavaScript -------------------------->
-
-      function opentab(tabname) {
-        for (tabLink of tabLinks) {
-          tabLink.classList.remove('active-link')
-        }
-        for (tabContent of tabContents) {
-          tabContent.classList.remove('active-tab')
-        }
-        event.currentTarget.classList.add('active-link')
-        document.getElementById(tabname).classList.add('active-tab')
-      }
-    </script>
-
-    <!-- script for menu -->
-    <script>
-      var sidemenu = document.getElementById('sidemenu')
-
-      function openmenu() {
-        sidemenu.style.right = '0'
-      }
-      function closemenu() {
-        sidemenu.style.right = '-200px'
-      }
-    </script>
   </body>
 </html>
