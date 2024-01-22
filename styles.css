@@ -61,7 +61,7 @@ body {
 
   /* cool borders */
 
-  --borderRed: 2px solid red;
+  /* --borderRed: 2px solid red;
   --borderLime: 2px solid lime;
   --borderPink: 2px solid pink;
   --borderViolet: 2px solid violet;
@@ -76,7 +76,7 @@ body {
   --borderGray: 2px solid gray;
   --borderGreen: 2px solid green;
   --borderAqua: 2px solid aqua;
-  --borderTurquoise: 2px solid turquoise;  
+  --borderTurquoise: 2px solid turquoise;   */
 
   /* box shadow*/
   --shadow-1: 0 1px 7px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -258,11 +258,9 @@ nav ul li a:hover::after {
 }
 
 .split-left{
-background-color: blue;
 left: 0;
 }
 .split-right{
-background-color: yellow;
 right: 0;
 }
 
@@ -407,7 +405,7 @@ ul.a {
 
 .btn {
   display: block;
-  margin: 50px auto;
+  margin: 30px auto;
   width: fit-content;
   background: #ff004f;
   padding: 14px 50px;
