@@ -76,7 +76,7 @@ body {
   --borderGray: 2px solid gray;
   --borderGreen: 2px solid green;
   --borderAqua: 2px solid aqua;
-  --borderTurquoise: 2px solid turquoise; */
+  --borderTurquoise: 2px solid turquoise;  
 
   /* box shadow*/
   --shadow-1: 0 1px 7px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -176,6 +176,8 @@ nav ul li a:hover::after {
 .about-col-1 {
   border: var(--borderBlue);
   flex-basis: 35%;
+  margin-top: -10%;
+  
 }
 .about-col-1 img {
   width: 100%;
@@ -191,6 +193,7 @@ nav ul li a:hover::after {
   border: var(--borderRed);
   font-size: 60px;
   padding-bottom: 30px;
+  padding-top: 20px;
   font-weight: 600;
   color: white;
 }
@@ -233,6 +236,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents {
+  border: var(--borderBlue)
   display: none;
 }
 
@@ -240,7 +244,35 @@ nav ul li a:hover::after {
   display: block;
 }
 
+/* download / video split */
+.split{
+  border: var(--borderYellow);
+  height: 50%;
+  width: 25%;
+  position: fixed;
+  z-index:1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  display: flex;
+}
 
+.split-left{
+background-color: blue;
+left: 0;
+}
+.split-right{
+background-color: yellow;
+right: 0;
+}
+
+/* .centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
 /* ----------------- experience -------------------- */
 
 .experience{
@@ -311,6 +343,9 @@ ul.a {
   list-style-type: circle;
 }
 
+.vid{
+  border: 5px solid yellow;
+}
 /* ----------------- contact -------------------- */
 
 .contact{
