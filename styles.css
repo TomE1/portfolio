@@ -342,6 +342,13 @@ ul.a {
   font-size: 25px;
 }
 
+.email{
+  margin-left: 20px;
+}
+.phone{
+  margin-left: 20px;
+}
+
 .social-icons {
   margin-top: 30px;
   margin-left: 20px;
@@ -360,6 +367,8 @@ ul.a {
   color: #ff004f;
   transform: translateY(-5px);
 }
+
+
 
 .btn {
   display: block;
