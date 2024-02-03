@@ -61,7 +61,7 @@ body {
 
   /* cool borders */
 
-  /* --borderRed: 2px solid red;
+  --borderRed: 2px solid red;
   --borderLime: 2px solid lime;
   --borderPink: 2px solid pink;
   --borderViolet: 2px solid violet;
@@ -76,7 +76,7 @@ body {
   --borderGray: 2px solid gray;
   --borderGreen: 2px solid green;
   --borderAqua: 2px solid aqua;
-  --borderTurquoise: 2px solid turquoise;     */
+  --borderTurquoise: 2px solid turquoise;     
 
   /* box shadow*/
   --shadow-1: 0 1px 7px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -436,79 +436,47 @@ ul.a {
 
 /* media queries */
 
+/* --------------------- css for small screens ------------------- */
+
 nav .fas {
   display: none;
 }
 
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url(images/phone-background-tom.png);
+    border: var(--borderLime);
+    background-image: url(images/phone-background3.png);
     .header-text {
       margin-top: 30%;
-      font-size: 16px;
+      font-size: 14px;
     }
     .header-text h1 {
       font-size: 30px;
     }
-  }
-
-
-
-  nav .fas {
-    display: block;
-    font-size: 25px;
-  }
-  nav ul {
-    background: #ff004f;
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 25px;
-  }
-  nav ul .fas {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-  }
-  .sub-title {
-    font-size: 40px;
-  }
-
-  .about-col-1,
-  .about-col-2 {
-    padding-top: 150px;
-    border: 2px dashed white;
-    flex-basis: 100%;
-  }
-  .about-col-1 {
-    margin-bottom: 30px;
-  }
-  .about-col-2 {
-    font-size: 14px;
-  }
-  .about-col-2 p{
-
-    margin-bottom: 1000px;
-    font-size: 14px;
-  }
-  .tab-links {
-    font-size: 16px;
-    margin-right: 20px;
-  }
-  .contact-left,
-  .contact-right {
-    flex-basis: 100%;
-  }
-  .copyright {
-    font-size: 14px;
+    nav .fas {
+      display: block;
+      font-size: 25px;
+    }
+    nav ul {
+      background: #ff004f;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.5s;
+    }
+    nav ul li {
+      display: block;
+      margin: 25px;
+    }
+    nav ul .fas {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+    }
   }
 }
